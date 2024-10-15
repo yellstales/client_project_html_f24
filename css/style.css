@@ -55,13 +55,21 @@ nav a {
     top: 20px;
 }
 
+*:focus {
+    border: 2px solid #00274C;
+  }
+
 .cew_areas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     list-style-type: none;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     padding-top: 0.4em;
     padding-bottom: 0.4em;
     padding-left: 0.2em;
@@ -90,7 +98,8 @@ h5 {
     font-size: 0.9em;
 }
 
-p, ul {
+p,
+ul {
     font-size: 0.9em;
     padding: 0.2em;
 }
@@ -103,7 +112,7 @@ p {
 img {
     display: block;
     margin: 0 auto;
-    max-width: 100%; 
+    max-width: 100%;
 }
 
 figcaption {
@@ -128,9 +137,9 @@ footer {
     text-align: center;
 }
 
-@media only screen and (min-width: 800px) {
-    
+/*@media only screen and (min-width: 800px) {
+
     .nav {
         text-align: right;
     }
-}
+}*/
