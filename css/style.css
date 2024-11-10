@@ -195,12 +195,12 @@ footer {
     .main_grid {
         display: flex;
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 2em;
         justify-content: center;
     }
     .main_grid > .item {
         background-color: #f0f0f0;
-        padding: 1rem; 
+        padding: 1em; 
         border-radius: 8px; 
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
         flex: 1 1 23%;
