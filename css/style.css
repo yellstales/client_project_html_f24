@@ -207,7 +207,7 @@ footer {
     }
 
     .main_grid > .item p {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     .main_grid > .item img {
@@ -215,7 +215,7 @@ footer {
     }
 
     .main_grid h3 {
-        font-size: 0.8em;
+        font-size: 1em;
         text-align: center;
         font-weight:400;
     }
