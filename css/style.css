@@ -24,7 +24,8 @@ header img {
 
 nav li {
     display: inline;
-    padding-right: 20px;
+    padding: 0 5px;
+    font-size: 0.35em;
 }
 
 nav a {
@@ -34,7 +35,9 @@ nav a {
 }
 
 .active a {
-    color: #FFCB05
+    color: #FFCB05;
+    padding: 1px;
+    border: 2px solid #FFCB05;
 }
 
 .skip a {
@@ -57,9 +60,13 @@ nav a {
 
 *:focus {
     border: 2px solid #00274C;
-  }
+}
 
-.cew_areas {
+.main_info {
+    padding: 0 25px;
+}
+
+.support_areas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     list-style-type: none;
@@ -129,6 +136,10 @@ footer {
     justify-items: center;
 }
 
+ul {
+    list-style-type: none;
+}
+
 footer a {
     color: #FFCB05;
 }
@@ -137,9 +148,75 @@ footer {
     text-align: center;
 }
 
-/*@media only screen and (min-width: 800px) {
+.horizontal-nav {
+    display: none;
+}
+
+@media only screen and (min-width: 800px) {
 
     .nav {
         text-align: right;
+        font-size: 2em;
     }
-}*/
+
+    .body {
+        display: flex;
+        flex-direction: row;
+        flex: 2 3 auto;
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .horizontal-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #f0f0f0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        padding: 20px;
+        width: 20%;
+    }
+
+    .horizontal-nav li {
+        padding: 5px 0;
+    }
+
+    .horizontal-nav a {
+        color: #002745;
+        text-decoration: none;
+        font-size: 0.7em;
+    }
+    
+    .main_info {
+        overflow-y: auto;
+    }
+
+    .main_grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .main_grid > .item {
+        background-color: #f0f0f0;
+        padding: 1rem; 
+        border-radius: 8px; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        flex: 1 1 23%;
+    }
+
+    .main_grid > .item p {
+        font-size: 0.6em;
+    }
+
+    .main_grid > .item img {
+        width: 100%;
+    }
+
+    .main_grid h3 {
+        font-size: 0.62em;
+        text-align: center;
+        font-weight:400;
+    }
+}
