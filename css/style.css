@@ -219,4 +219,17 @@ footer {
         text-align: center;
         font-weight:400;
     }
+
+    .notfound {
+        display: flex;
+        flex-direction: row;
+        padding: 2em;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .notfound img {
+        width: 30%;
+    }
 }
